@@ -513,7 +513,6 @@ p {
 	margin-bottom: 1em;
 }
 
-
 #imgMakeup {
 	width: inherit;
 	max-width: 100%;
@@ -530,7 +529,6 @@ form {
   margin: 0 auto;
   /*padding: 1em 1em 2em 0;*/
   background: #f2f3f4;
-	max-width: 300px;
 	padding-top: 1em;
 	padding-bottom: 1em;
 }
@@ -544,12 +542,6 @@ h2 {
 input[type=email],
 input[type=tel],
 input[type=text] {
-  /*margin-top: 0.5em;
-  padding: 0.5em;
-  width: inherit;
-  background-color: #cbcfd3;
-	border: none;
-  margin-bottom: 3em;*/
 	width: 100%;
   padding: 1em;
   margin: 1em 0 2em 0;
@@ -569,11 +561,9 @@ div {
 }
 
 label {
-	/*display: block;*/
 }
 
 input[type="radio"] {
-	/*margin-top: 1em;*/
 	margin-right: 0.5em;
 }
 
@@ -592,6 +582,10 @@ input[type=submit] {
 }
 
 @media screen and (min-width: 480px) {
-form {
-  max-width: 480px;
+  form {
+    max-width: 600px;
+  }
+	#imgMakeup {
+		max-width: 600px;
+	}
 }

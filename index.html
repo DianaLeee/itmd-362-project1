@@ -7,39 +7,31 @@
   <link rel="stylesheet" media="screen" href="screen.css" />
 </head>
 <body>
+  <script type="text/javascript" src="script.js"></script>
   <h1>Sign Up For Special Offers</h1>
-  <img src="makeup_image.jpg" id="imgMakeup"/>
-  <form action="index.html" method="post">
+  <img src="./images/makeup_image.jpg" id="imgMakeup"/>
+  <form method="post" name="userForm" onSubmit="formCheck();return false">
     <fieldset name="userInfo">
       <h2>Your Information</h2>
       <p>*Required Field</p>
-      <label for="name">First Name*
+      <label for="firstName">First Name*
         <input type="text" name="userFirstName" id="firstName">
       </label>
-      <label for="name">Last Name*
+      <label for="lastName">Last Name*
         <input type="text" name="userLastName" id="lastName">
       </label>
-
       <label for="emailAddress">Email Address*
         <input type="email" placeholder="ex@ample.com" id="emailAddress" name="userEmail">
       </label>
-
-      <!-- <label>
-        <select name="cars">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="fiat">Fiat</option>
-          <option value="audi">Audi</option>
-        </select>
-      </label> -->
-
-      Gender
+      Gender*
       <div>
-        <label>Male <input type="radio" checked name="userGender" value="male"></label>
-        <label>Female <input type="radio" name="userGender" value="female"></label>
-        <label>Other <input type="radio" name="userGender" value="other"></label>
+        <label for="male">Male <input type="radio" checked name="userGender" value="male"></label>
+        <label for="female">Female <input type="radio" name="userGender" value="female"></label>
+        <label for="other">Other <input type="radio" name="userGender" value="other"></label>
       </div>
-
+      <label for="mobileNumber">Mobile number
+        <input type="tel" name="userTel" placeholder="000-000-0000" id="mobileNumber" name="userNumber">
+      </label>
     </fieldset>
     <input type="submit" value="submit">
   </form>
