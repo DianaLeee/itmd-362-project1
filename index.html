@@ -9,7 +9,7 @@
 <body>
   <script type="text/javascript" src="script.js"></script>
   <h1>Sign Up For Special Offers</h1>
-  <img src="./images/makeup_image.jpg" id="imgMakeup"/>
+  <img src="./images/makeup_image.jpg" id="imgMakeup" alt="cosmetics"/>
   <form method="post" name="userForm" onSubmit="formCheck();return false">
     <fieldset name="userInfo">
       <h2>Your Information</h2>
@@ -25,12 +25,12 @@
       </label>
       Gender*
       <div>
-        <label for="male">Male <input type="radio" checked name="userGender" value="male"></label>
-        <label for="female">Female <input type="radio" name="userGender" value="female"></label>
-        <label for="other">Other <input type="radio" name="userGender" value="other"></label>
+        <label for="male">Male <input type="radio" checked name="userGender" value="male" id="male"></label>
+        <label for="female">Female <input type="radio" name="userGender" value="female" id="female"></label>
+        <label for="other">Other <input type="radio" name="userGender" value="other" id="other"></label>
       </div>
       <label for="mobileNumber">Mobile number
-        <input type="tel" name="userTel" placeholder="000-000-0000" id="mobileNumber" name="userNumber">
+        <input type="tel" name="userTel" placeholder="000-000-0000" id="mobileNumber">
       </label>
     </fieldset>
     <input type="submit" value="submit">
