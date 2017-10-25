@@ -499,7 +499,7 @@ template {
 
 body {
   padding: 1em;
-  font-family: Verdana;
+  font-family: Verdana, "Trebuchet MS", Tahoma, sans-serif; /* sans-serif*/
 }
 
 h1 {
