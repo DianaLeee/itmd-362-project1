@@ -589,3 +589,12 @@ input[type=submit] {
     max-width: 600px;
   }
 }
+
+@media screen and (min-width: 720px) {
+	body {
+		font-size: 120%;
+	}
+	input[type=submit] {
+		width: 50%;
+	}
+}
